@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const EntireLoginPage=styled.div`
     height:100vh;
-    width:100vw;
+    width:100%;
     background-color:#FFFFFF;
     display:flex;
    
@@ -55,6 +55,11 @@ flex-direction:column;
 justify-content:center;
 align-items:center;
 
+
+@media (min-width: 1700px){
+    height:550px;
+    width:550px;
+}
 ;`
 
 export const Logo=styled.img`
@@ -71,8 +76,8 @@ export const InputElement=styled.input`
     border:0px;
 `;
 export const CheckboxInputElement =styled.input`
-    height:30px;
-      width:68%;
+    height:100%;
+      width:70%;
       background:#FFFFFF;
     border:0px;
 `;
@@ -80,11 +85,15 @@ export const CheckboxInputElement =styled.input`
 export const Styles=styled.div`
     color:#475569;
     font-family: Roboto;
-    font-size: 12px;
+    font-size: 20px;
     font-weight: 700;
     display:flex;
     width:80%;
     align-items:flex-start;
+    
+    @media (max-width:1050px){
+        font-size:14px;
+    }
 ` ;
 export const CheckBox=styled.div`
     display:flex;
@@ -113,7 +122,7 @@ export const ButtonStyles=styled.div`
 `;
 
 export const FlexingCon=styled.div`
-    width:80%;
+    width:90%;
     display:flex;
     gap:5px;
     flex-direction:column;
